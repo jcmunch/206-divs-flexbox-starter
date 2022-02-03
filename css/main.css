@@ -95,45 +95,39 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   html {
+html {
     background: url(../img/desk.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
+    width: 100%;
   }
   
-  body {
+body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    padding: 2em;
+    padding: 0em 2em;
     font-size: 1.25em;
-    height: 100%;
     display: flex;
     justify-content: center;
   }
 
-  header, footer, main {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    max-width: 1200px;
   }
 
-  header, footer {
+header, footer {
     width: 100%;
-    height: 88px;
     display: flex;
     justify-content: flex-start;
 }
 
-  main {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-  }
-
-  .flex-container {
+main {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
+    justify-content: center;
   }
   
  .flex-items {
@@ -142,11 +136,10 @@ textarea {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3125em;
     font-weight: 700;
-    width: 30%;
-    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #292929;
   }
 
   header h1 {
@@ -165,10 +158,8 @@ textarea {
     font-family: 'Montserrat', sans-serif;
   }
   
-  footer ul li {
-      list-style-type: none;
-      display: inline;
-      padding: 0 10px 0;
+  footer i {
+    padding: 30px 20px 0 0;
   }
 
 
